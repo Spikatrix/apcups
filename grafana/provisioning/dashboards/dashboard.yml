@@ -1,0 +1,9 @@
+apiVersion: 1
+
+providers:
+  - name: 'default'
+    orgId: 1
+    folder: ''
+    type: json
+    options:
+      url: https://grafana.com/api/dashboards/21119/revisions/latest/download
