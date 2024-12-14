@@ -29,4 +29,4 @@ scrape_configs:
 
   - job_name: "apcupsd"
     static_configs:
-      - targets: ["localhost:9162"]
+      - targets: ["apcupsd_exporter:9162"]
