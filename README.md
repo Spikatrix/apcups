@@ -8,8 +8,10 @@ Install and run `apcupsd`:
 
 ```sh
 sudo apt install apcupsd
+sed -i 's/^NISIP 127.0.0.1/NISIP 0.0.0.0/' /etc/apcupsd/apcupsd.conf
 systemctl enable apcupsd
 systemctl start apcupsd
+apcaccess # Ensure that you can see metrics without errors 
 ```
 
 ## Installation

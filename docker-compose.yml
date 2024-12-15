@@ -4,6 +4,8 @@ services:
     command: ["-apcupsd.addr=host.docker.internal:3551"]
     ports:
       - "9162:9162"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   prometheus:
     image: prom/prometheus:v3.0.1
