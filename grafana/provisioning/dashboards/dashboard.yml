@@ -4,6 +4,7 @@ providers:
   - name: 'default'
     orgId: 1
     folder: ''
-    type: json
+    type: file
+    allowUiUpdates: true
     options:
-      url: https://grafana.com/api/dashboards/21119/revisions/latest/download
+      path: /etc/grafana/provisioning/dashboards/dashboard-config

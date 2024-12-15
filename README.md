@@ -17,5 +17,10 @@ apcaccess # Ensure that you can see metrics without errors
 ## Installation
 
 ```sh
+./setup-dashboard.sh 21119
+echo "GRAFANA_USER=<YOUR-USERNAME>" >> .env
+echo "GRAFANA_PASSWORD=<YOUR-PASSWORD>" >> .env
 docker compose up -d
 ```
+
+Visit `https://<ip_or_domain>:3000` and navigate to the APC UPS Dashboard to see metrics.
