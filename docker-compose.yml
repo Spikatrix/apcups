@@ -1,6 +1,7 @@
 services:
   apcupsd_exporter:
     build: .
+    restart: unless-stopped
     command: ["-apcupsd.addr=host.docker.internal:3551"]
     ports:
       - "9162:9162"
