@@ -16,6 +16,7 @@ services:
       - prometheus-data:/prometheus
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.retention.time=12w'
     ports:
       - "9090:9090"
 
